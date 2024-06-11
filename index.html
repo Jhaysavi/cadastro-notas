@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro notas</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <ul class="menu">
+            <li class="menuItem"><a href="#">Cadastro de notas</a></li>
+            <li class="menuItem"><a href="#">Cadastro de aluno</a></li>
+            <li class="menuItem"><a href="#">Alunos cadastrasdos</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <form action="#" class="gradeForm">
+            <h1 class="titleForm">Cadastro de notas</h1>
+            <fieldset class="formGroup">
+                <label class="label" for="registration">Numéro de matricula:</label>
+                <input class="input" type="number" placeholder="Digite o numero de matricula aqui...">
+            </fieldset>
+
+            <fieldset class="formGroup">
+                <label for="name" class="label">Nome do aluno(a):</label>
+                <input type="text" id="name" class="input" placeholder="Jhon Smith">
+            </fieldset>
+
+            <fieldset class="formGroup">
+                <label for="class" class="label">Curso:</label>
+                <select name="class" id="class" class="dropdown">
+                    <option value="0"></option>
+                    <option value="1">POO(programação orientada a objeto)</option>
+                </select>
+            </fieldset>
+
+            <div class="grades">
+                <fieldset class="formGroup">
+                    <label for="grade1" class="label">EA1:</label>
+                    <input type="number" class="gradeInput" placeholder="100">
+                </fieldset>
+
+                <fieldset class="formGroup">
+                    <label for="grade2" class="label">EA2:</label>
+                    <input type="number" class="gradeInput" placeholder="100">
+                </fieldset>
+
+                <fieldset class="formGroup">
+                    <label for="grade3" class="label">EA3:</label>
+                    <input type="number" class="gradeInput" placeholder="100">
+                </fieldset>
+
+                <fieldset class="formGroup">
+                    <label for="grade4" class="label">EA4:</label>
+                    <input type="number" class="gradeInput" placeholder="100">
+                </fieldset>
+
+                <fieldset class="formGroup">
+                    <label for="grade5" class="label">EA5:</label>
+                    <input type="number" class="gradeInput" placeholder="100">
+                </fieldset>
+            </div>
+            <button class="btn" type="submit">
+                Cadastrar
+            </button>
+        </form>
+
+    </main>
+
+</body>
+
+</html>

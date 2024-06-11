@@ -1,0 +1,89 @@
+body {
+    background-color: #B5A2D8;
+}
+
+.header {
+    background-color: #2B21ED;
+
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+
+    width: 50%;
+}
+
+.menu a {
+    color: #ffff;
+
+    text-decoration: none;
+}
+
+.gradeForm {
+    background: linear-gradient(rgba(53, 43, 72, 0.2), rgba(128, 104, 174, 0.2));
+
+    margin: 80px;
+    padding: 20px;
+}
+
+.titleForm {
+    color: #1E1926;
+
+    font-size: 32px;
+
+    text-align: center;
+}
+
+.formGroup{
+    margin-bottom: 20px;
+}
+
+.label{
+    color: #1E1926;
+    display: block;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.input{
+    border-radius: 5px;
+
+    padding: 10px;
+    width: 40%;
+}
+
+.dropdown{
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+.grades{
+    display: flex;
+    justify-content: space-around;
+}
+
+.gradeInput{
+    border-radius: 5px;
+
+    padding: 10px;
+    width: 30%;
+}
+
+.btn{
+    background-color: #2B21ED;
+    border-radius: 20px;
+
+    color: #ffff;
+
+    font-size: 25px;
+
+    padding: 10px 30px 10px 30px;
+}
