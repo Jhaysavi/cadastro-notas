@@ -25,6 +25,8 @@ body {
 
 .gradeForm {
     background: linear-gradient(rgba(53, 43, 72, 0.2), rgba(128, 104, 174, 0.2));
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 
     margin: 80px;
     padding: 20px;
@@ -38,11 +40,11 @@ body {
     text-align: center;
 }
 
-.formGroup{
+.formGroup {
     margin-bottom: 20px;
 }
 
-.label{
+.label {
     color: #1E1926;
     display: block;
 
@@ -52,38 +54,94 @@ body {
     margin-bottom: 10px;
 }
 
-.input{
+.input {
     border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 
     padding: 10px;
     width: 40%;
 }
 
-.dropdown{
+input:focus {
+    outline: none !important;
+    border-color: #4773a3;
+    box-shadow: 0 0 10px #4773a3;
+}
+
+.dropdown {
     border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 
     padding: 10px;
 }
 
-.grades{
+.grades {
     display: flex;
     justify-content: space-around;
 }
 
-.gradeInput{
+.gradeInput {
     border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 
     padding: 10px;
     width: 30%;
 }
 
-.btn{
+.error {
+    color: red;
+    display: block;
+
+    margin-top: 8px;
+}
+
+.btnContainer {
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+
+.btn {
     background-color: #2B21ED;
     border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 
     color: #ffff;
+    cursor: pointer;
 
     font-size: 25px;
 
     padding: 10px 30px 10px 30px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

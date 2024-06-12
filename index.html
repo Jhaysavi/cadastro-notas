@@ -19,59 +19,78 @@
     </header>
 
     <main>
-        <form action="#" class="gradeForm">
+        <form action="#" class="gradeForm" id="gradeForm">
             <h1 class="titleForm">Cadastro de notas</h1>
             <fieldset class="formGroup">
                 <label class="label" for="registration">Numéro de matricula:</label>
-                <input class="input" type="number" placeholder="Digite o numero de matricula aqui...">
+                <input class="input" type="number" id="registration" placeholder="Digite o numero de matricula aqui..."
+                    required>
+                <span class="error"></span>
             </fieldset>
 
             <fieldset class="formGroup">
                 <label for="name" class="label">Nome do aluno(a):</label>
-                <input type="text" id="name" class="input" placeholder="Jhon Smith">
+                <input type="text" id="name" class="input" placeholder="Jhon Smith" required>
+                <span class="error"></span>
             </fieldset>
 
             <fieldset class="formGroup">
-                <label for="class" class="label">Curso:</label>
-                <select name="class" id="class" class="dropdown">
-                    <option value="0"></option>
+                <label for="course" class="label">Curso:</label>
+                <select name="course" id="course" class="dropdown" required>
+                    <option value="" disabled></option>
                     <option value="1">POO(programação orientada a objeto)</option>
                 </select>
+                <span class="error"></span>
             </fieldset>
 
             <div class="grades">
                 <fieldset class="formGroup">
                     <label for="grade1" class="label">EA1:</label>
-                    <input type="number" class="gradeInput" placeholder="100">
+                    <input type="number" id="grade1" class="gradeInput" placeholder="100" min="0" max="100" required>
+                    <span class="error"></span>
                 </fieldset>
 
                 <fieldset class="formGroup">
                     <label for="grade2" class="label">EA2:</label>
-                    <input type="number" class="gradeInput" placeholder="100">
+                    <input type="number" id="grade2" class="gradeInput" placeholder="100" min="0" max="100" required>
+                    <span class="error"></span>
                 </fieldset>
 
                 <fieldset class="formGroup">
                     <label for="grade3" class="label">EA3:</label>
-                    <input type="number" class="gradeInput" placeholder="100">
+                    <input type="number" id="grade3" class="gradeInput" placeholder="100" min="0" max="100" required>
+                    <span class="error"></span>
                 </fieldset>
 
                 <fieldset class="formGroup">
                     <label for="grade4" class="label">EA4:</label>
-                    <input type="number" class="gradeInput" placeholder="100">
+                    <input type="number" id="grade4" class="gradeInput" placeholder="100" min="0" max="100" required>
+                    <span class="error"></span>
                 </fieldset>
 
                 <fieldset class="formGroup">
                     <label for="grade5" class="label">EA5:</label>
-                    <input type="number" class="gradeInput" placeholder="100">
+                    <input type="number" id="grade5" class="gradeInput" placeholder="100" min="0" max="100" required>
+                    <span class="error"></span>
                 </fieldset>
             </div>
-            <button class="btn" type="submit">
-                Cadastrar
-            </button>
+            <div class="btnContainer">
+                <button class="btn" type="submit">
+                    Cadastrar
+                </button>
+            </div>
         </form>
 
     </main>
 
+    <section id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </section>
+
 </body>
+<script src="./script.js"></script>
 
 </html>
